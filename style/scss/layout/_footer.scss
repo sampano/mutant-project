@@ -1,0 +1,97 @@
+.footer {
+  background-color: var(--background-color2);
+  color: var(--text-color);
+  padding: 200px 180px 40px;
+
+  &__container {
+    display: flex;
+  }
+  &__cta {
+    text-align: left;
+    margin-bottom: 20px;
+    width: 40%;
+  }
+
+  &__cta-form {
+    // display: flex;
+    // justify-content: center;
+    // gap: 10px;
+    fieldset {
+      border: none;
+      padding: 0;
+    }
+
+    small {
+      padding-top: 20px;
+      display: block;
+    }
+  }
+
+  &__cta-input {
+    padding: 10px 0;
+    font-size: 1rem;
+    width: 250px;
+    display: block;
+    border: none;
+    background: var(--background-color2);
+    border-bottom: 1px solid var(--border-color);
+    margin-bottom: 20px;
+    color: var(--text-color);
+  }
+
+  &__cta-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    text-transform: none;
+  }
+
+  &__links {
+    // display: flex;
+    // justify-content: space-around;
+    // flex-wrap: wrap;
+    // margin-bottom: 20px;
+    width: 20%;
+  }
+
+  &__link {
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    padding-bottom: 30px;
+    font-size: 25px;
+    text-align: left;
+  }
+
+  &__link:hover {
+    text-decoration: underline;
+  }
+
+  &__payments {
+    text-align: center;
+    width: 40%;
+    padding-left: 180px;
+    text-align: left;
+  }
+
+  &__payments img {
+    width: 220px;
+    position: relative;
+    bottom: -4px;
+  }
+
+  &__payments--icons {
+    padding: 0px 12px 0;
+  }
+
+  &__socials {
+    padding-bottom: 20px;
+    // text-align: left;
+  }
+
+  &__social {
+    padding-right: 20px;
+    color: var(--text-color);
+    width: 100px;
+  }
+}

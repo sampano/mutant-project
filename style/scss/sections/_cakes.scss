@@ -1,0 +1,40 @@
+@use "../util";
+
+.cakes {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+.cake {
+  flex: 1 1 calc(33% - 20px);
+  margin: 10px;
+  text-align: center;
+  background-color: var(--background-color);
+  position: relative;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+}
+
+.cake__title {
+  font-family: util.$font4;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  position: absolute;
+  bottom: 88px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-size: 4.5rem;
+  font-weight: 200;
+}
+
+// .cake__description {
+//   margin-top: 10px;
+//   font-size: 1rem;
+//   color: #666;
+// }

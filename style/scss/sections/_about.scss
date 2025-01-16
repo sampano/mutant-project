@@ -1,0 +1,24 @@
+@use "../util";
+
+.section__about {
+  background-color: var(--background-color2);
+
+  &--container {
+    padding: 50px 90px;
+  }
+}
+
+.section__title {
+  font-size: 5rem;
+  color: var(--text-color);
+  font-family: util.$font3;
+  padding-right: 850px;
+  font-weight: 200;
+}
+
+.section__content {
+  margin-top: 20px;
+  color: var(--text-color);
+  line-height: 59px;
+  font-size: 25px;
+}

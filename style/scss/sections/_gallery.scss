@@ -1,0 +1,23 @@
+.section--gallery {
+  padding: 0;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); // 4 columns of equal width
+  grid-template-rows: repeat(2, auto); // 2 rows with auto height
+  gap: 5px; // Space between grid items
+}
+
+.gallery__item {
+  overflow: hidden;
+  max-height: 360px;
+}
+
+.gallery__image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  height: 100%;
+  object-position: bottom;
+}

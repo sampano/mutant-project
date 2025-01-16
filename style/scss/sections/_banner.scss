@@ -1,0 +1,56 @@
+@use "../util";
+
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(../../../media/images/banner/banner2.jpg);
+  background-size: cover;
+  height: 135vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  background-repeat: no-repeat;
+  position: relative;
+
+  &__content {
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  &__title {
+    font-size: 12rem;
+    font-family: util.$font4;
+    margin-bottom: 20px;
+    font-weight: 200;
+    line-height: 130px;
+  }
+
+  &__subtitle {
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+
+  &__link {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
+    font-family: util.$font2;
+    font-size: 23px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    a {
+      font-weight: 700;
+      color: var(--text-color);
+    }
+  }
+
+  &--button {
+    font-family: util.$font2;
+    font-size: 23px;
+    letter-spacing: 1px;
+  }
+}

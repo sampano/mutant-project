@@ -1,0 +1,45 @@
+@use "../util";
+
+.header {
+  background: transparent;
+  color: #fff;
+  padding: 80px 20px 20px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  font-family: util.$font3;
+  z-index: 2;
+
+  &__title {
+    font-size: 2.5rem;
+  }
+
+  &__subtitle {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+
+  &__content--container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__content--links {
+    a {
+      color: var(--text-color);
+      text-transform: uppercase;
+      padding: 0 20px;
+      font-size: 19px;
+    }
+  }
+
+  &__content--icons {
+    a {
+      padding: 0 20px;
+      i {
+        color: var(--text-color);
+      }
+    }
+  }
+}
