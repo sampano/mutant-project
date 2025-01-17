@@ -4,7 +4,7 @@
   background-color: var(--background-color2);
 
   &--container {
-    padding: 50px 60px;
+    padding: 50px 170px;
   }
 }
 
@@ -26,7 +26,7 @@
 @media only screen and (max-width: 1020px) {
   .section__about {
     &--container {
-      padding: 50px 50px;
+      padding: 50px 60px;
     }
   }
 }
