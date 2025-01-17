@@ -22,6 +22,15 @@
       padding-top: 20px;
       display: block;
     }
+
+    input[type="checkbox"] {
+      margin-left: 20px;
+    }
+    label {
+      min-width: 100px;
+      display: inline-block;
+      text-align: left;
+    }
   }
 
   &__cta-input {
