@@ -29,3 +29,7 @@ function toggleMobileMenu() {
     $(".header__content--links-mobile-container").slideToggle();
   });
 }
+
+const currentYear = new Date().getFullYear();
+const copyrightText = `© ${currentYear} The Cake Boutique. All rights reserved.`;
+document.getElementById("copyright").textContent = copyrightText;

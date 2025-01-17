@@ -107,6 +107,15 @@
       position: static;
     }
   }
+
+  &__alrights-reserved {
+    padding-top: 50px;
+    text-align: center;
+
+    p {
+      font-size: 1.3rem;
+    }
+  }
 }
 
 @media only screen and (max-width: 1350px) {
