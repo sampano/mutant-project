@@ -130,7 +130,7 @@
       align-items: center;
       justify-content: space-between;
       padding: 0 20px;
-      border-bottom: 1px solid #333;
+      border-bottom: 1px solid var(--border-color2);
       gap: 20px;
     }
     &__logo {
@@ -147,7 +147,7 @@
       align-items: center;
       justify-content: space-between;
       width: 95%;
-      border-right: 1px solid #333;
+      border-right: 1px solid var(--border-color2);
     }
 
     &__content--links-mobile-container {

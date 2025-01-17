@@ -11,7 +11,7 @@
 
 .gallery__item {
   overflow: hidden;
-  max-height: 360px;
+  max-height: 400px;
 }
 
 .gallery__image {
@@ -20,7 +20,6 @@
   object-fit: cover;
   height: 100%;
   object-position: bottom;
-  // max-height: 360px;
 }
 
 @media only screen and (max-width: 780px) {

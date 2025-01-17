@@ -4,7 +4,7 @@
   background-color: var(--background-color2);
 
   &--container {
-    padding: 50px 90px;
+    padding: 50px 150px;
   }
 }
 
@@ -12,7 +12,6 @@
   font-size: 5rem;
   color: var(--text-color);
   font-family: util.$font3;
-  // padding-right: 850px;
   font-weight: 200;
 }
 
@@ -21,6 +20,14 @@
   color: var(--text-color);
   line-height: 59px;
   font-size: 25px;
+}
+
+@media only screen and (max-width: 1020px) {
+  .section__about {
+    &--container {
+      padding: 50px 80px;
+    }
+  }
 }
 
 @media only screen and (max-width: 750px) {
