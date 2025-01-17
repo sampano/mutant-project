@@ -189,3 +189,24 @@
     }
   }
 }
+
+@media only screen and (max-width: 570px) {
+  .header {
+    &__logo {
+      svg {
+        &.logo {
+          width: 100px;
+        }
+      }
+    }
+
+    &__content--icons {
+      a {
+        padding: 0 5px;
+        .icon {
+          width: 18px;
+        }
+      }
+    }
+  }
+}

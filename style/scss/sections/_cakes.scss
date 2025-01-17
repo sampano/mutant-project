@@ -13,24 +13,37 @@
   background-color: var(--background-color);
   position: relative;
   max-height: 650px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+
   img {
     width: 100%;
     object-fit: cover;
     height: 100%;
   }
-}
-
-.cake__title {
-  font-family: util.$font4;
-  font-size: 1.5rem;
-  color: var(--text-color);
-  position: absolute;
-  bottom: 88px;
-  left: 0;
-  right: 0;
-  margin: auto;
-  font-size: 4.5rem;
-  font-weight: 200;
+  &:hover {
+    transform: scale(1.1);
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  &__title {
+    font-family: util.$font4;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    position: absolute;
+    bottom: 88px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size: 4.5rem;
+    font-weight: 200;
+  }
 }
 
 @media only screen and (max-width: 920px) {
@@ -46,7 +59,16 @@
 }
 
 @media only screen and (max-width: 780px) {
+  .section--cakes {
+    padding: 150px 50px;
+  }
+
   .cake {
     max-height: none;
+
+    &__title {
+      font-size: 4rem;
+      line-height: 3.5rem;
+    }
   }
 }
