@@ -3,22 +3,13 @@
 .header {
   background-color: transparent;
   color: #fff;
-  padding: 30px 20px 20px;
+  padding: 35px 20px 15px;
   text-align: center;
   position: fixed;
   width: 100%;
   font-family: util.$font3;
   z-index: 2;
   transition: background-color 0.3s ease;
-
-  &__title {
-    font-size: 2.5rem;
-  }
-
-  &__subtitle {
-    margin-top: 10px;
-    font-size: 1.2rem;
-  }
 
   &__content--container {
     display: flex;
@@ -34,7 +25,12 @@
       color: var(--text-color);
       text-transform: uppercase;
       padding: 0 20px;
-      font-size: 19px;
+      font-size: 1.07rem;
+      font-family: util.$font3;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
 
@@ -52,6 +48,10 @@
       padding: 0 20px;
       .icon {
         width: 30px;
+        transition: transform 0.2s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
       }
     }
   }

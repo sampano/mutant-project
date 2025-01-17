@@ -13,9 +13,6 @@
   }
 
   &__cta-form {
-    // display: flex;
-    // justify-content: center;
-    // gap: 10px;
     fieldset {
       border: none;
       padding: 0;
@@ -47,10 +44,6 @@
   }
 
   &__links {
-    // display: flex;
-    // justify-content: space-around;
-    // flex-wrap: wrap;
-    // margin-bottom: 20px;
     width: 20%;
   }
 
@@ -59,7 +52,7 @@
     text-decoration: none;
     display: block;
     padding-bottom: 40px;
-    font-size: 25px;
+    font-size: 1.7rem;
     text-align: left;
   }
 
@@ -89,7 +82,7 @@
   }
 
   &__social {
-    margin-right: 20px;
+    margin-right: 1em;
     color: var(--text-color);
     width: 40px;
     height: 40px;

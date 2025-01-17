@@ -1,7 +1,7 @@
 @use "../util";
 
 .banner {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("../media/images/banner/banner.jpg");
   background-size: cover;
   background-position: center top;
@@ -20,7 +20,7 @@
   }
 
   &__title {
-    font-size: 12rem;
+    font-size: 13rem;
     font-family: util.$font4;
     margin-bottom: 20px;
     font-weight: 200;

@@ -4,28 +4,29 @@
   background-color: var(--background-color2);
 
   &--container {
-    padding: 50px 150px;
+    padding: 50px 60px;
   }
 }
 
 .section__title {
-  font-size: 5rem;
-  color: var(--text-color);
-  font-family: util.$font3;
+  font-size: 6rem;
+  color: var(--text-color3);
+  font-family: util.$font4;
   font-weight: 200;
+  line-height: 5rem;
 }
 
 .section__content {
   margin-top: 20px;
-  color: var(--text-color);
-  line-height: 59px;
-  font-size: 25px;
+  color: var(--text-color3);
+  line-height: 4.2rem;
+  font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 1020px) {
   .section__about {
     &--container {
-      padding: 50px 80px;
+      padding: 50px 50px;
     }
   }
 }
