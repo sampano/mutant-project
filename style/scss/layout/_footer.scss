@@ -102,9 +102,14 @@
     justify-content: center;
     border-radius: 50%;
     background-color: var(--background-color);
+    transition: transform 0.2s ease;
     img {
       width: 20px;
       position: static;
+    }
+
+    &:hover {
+      transform: scale(1.1);
     }
   }
 
