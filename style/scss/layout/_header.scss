@@ -1,14 +1,15 @@
 @use "../util";
 
 .header {
-  background: transparent;
+  background-color: transparent;
   color: #fff;
-  padding: 80px 20px 20px;
+  padding: 30px 20px 20px;
   text-align: center;
   position: fixed;
   width: 100%;
   font-family: util.$font3;
   z-index: 2;
+  transition: background-color 0.3s ease;
 
   &__title {
     font-size: 2.5rem;
@@ -26,6 +27,9 @@
   }
 
   &__content--links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     a {
       color: var(--text-color);
       text-transform: uppercase;
@@ -34,12 +38,154 @@
     }
   }
 
+  &__logo {
+    svg {
+      &.logo {
+        width: 220px;
+        min-height: 150px;
+      }
+    }
+  }
+
   &__content--icons {
     a {
       padding: 0 20px;
-      i {
-        color: var(--text-color);
+      .icon {
+        width: 30px;
       }
+    }
+  }
+  &__content--mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1630px) {
+  .header {
+    &__logo {
+      svg {
+        &.logo {
+          width: 180px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1590px) {
+  .header {
+    &__logo {
+      svg {
+        &.logo {
+          width: 150px;
+        }
+      }
+    }
+
+    &__content--icons {
+      a {
+        padding: 0 10px;
+        .icon {
+          width: 30px;
+        }
+      }
+    }
+
+    &__content--links {
+      a {
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1390px) {
+  .header {
+    &__content--icons {
+      a {
+        .icon {
+          width: 25px;
+        }
+      }
+    }
+
+    &__content--links {
+      a {
+        padding: 0 10px;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .header {
+    padding: 0;
+    background-color: var(--text-color2) !important;
+    &__content--container {
+      display: none;
+    }
+    &__content--mobile {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+      border-bottom: 1px solid #333;
+      gap: 20px;
+    }
+    &__logo {
+      svg {
+        &.logo {
+          width: 120px;
+          min-height: 80px;
+        }
+      }
+    }
+
+    &__content--mobile-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 95%;
+      border-right: 1px solid #333;
+    }
+
+    &__content--links-mobile-container {
+      display: none;
+      background-color: var(--text-color2);
+      position: absolute;
+      top: 86px;
+      width: 100%;
+      left: 0;
+      z-index: 1000;
+    }
+
+    &__content--links-mobile-container ul {
+      list-style-type: none;
+      padding: 10px;
+    }
+
+    &__content--links-mobile-container ul li {
+      padding: 15px;
+      text-align: center;
+    }
+
+    &__content--links-mobile-container ul li a {
+      text-decoration: none;
+      color: var(--text-color);
+    }
+
+    .burger-menu {
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      position: relative;
+      z-index: 101; /* Ensure it stays above the menu */
+    }
+
+    .burger-menu img {
+      width: 100%;
+      height: auto;
     }
   }
 }

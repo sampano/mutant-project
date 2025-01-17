@@ -58,13 +58,9 @@
     color: var(--text-color);
     text-decoration: none;
     display: block;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
     font-size: 25px;
     text-align: left;
-  }
-
-  &__link:hover {
-    text-decoration: underline;
   }
 
   &__payments {
@@ -85,13 +81,138 @@
   }
 
   &__socials {
-    padding-bottom: 20px;
-    // text-align: left;
+    padding-bottom: 40px;
+    max-width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   &__social {
-    padding-right: 20px;
+    margin-right: 20px;
     color: var(--text-color);
-    width: 100px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--background-color);
+    img {
+      width: 20px;
+      position: static;
+    }
+  }
+}
+
+@media only screen and (max-width: 1350px) {
+  .footer {
+    &__payments {
+      padding-left: 100px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .footer {
+    padding: 200px 100px 40px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .footer {
+    padding: 200px 80px 40px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .footer {
+    padding: 200px 50px 40px;
+
+    &__social {
+      width: 35px;
+      height: 35px;
+      img {
+        width: 15px;
+        position: static;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .footer {
+    padding: 100px 100px 40px;
+    &__container {
+      flex-wrap: wrap;
+    }
+    &__cta {
+      width: 100%;
+      text-align: center;
+    }
+    &__cta-input {
+      width: 100%;
+    }
+    &__links {
+      width: 50%;
+    }
+    &__payments {
+      width: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .footer {
+    padding: 100px 80px 40px;
+    &__payments--icons {
+      img {
+        width: 180px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .footer {
+    &__payments {
+      padding-left: 60px;
+    }
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .footer {
+    &__payments {
+      padding-left: 30px;
+    }
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .footer {
+    &__links {
+      width: 100%;
+    }
+    &__link {
+      text-align: center;
+    }
+    &__payments {
+      width: 100%;
+      text-align: center;
+    }
+    &__payments {
+      padding-left: 0;
+      text-align: center;
+    }
+
+    &__socials {
+      margin: 0 auto;
+    }
+
+    &__social {
+      margin-right: 10px;
+      margin-left: 10px;
+    }
   }
 }

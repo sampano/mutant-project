@@ -12,7 +12,7 @@
   font-size: 5rem;
   color: var(--text-color);
   font-family: util.$font3;
-  padding-right: 850px;
+  // padding-right: 850px;
   font-weight: 200;
 }
 
@@ -21,4 +21,24 @@
   color: var(--text-color);
   line-height: 59px;
   font-size: 25px;
+}
+
+@media only screen and (max-width: 750px) {
+  .section__title {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .section__title {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  .section__about {
+    &--container {
+      padding: 50px 50px;
+    }
+  }
 }

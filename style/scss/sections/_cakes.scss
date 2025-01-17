@@ -3,16 +3,16 @@
 .cakes {
   display: flex;
   justify-content: space-around;
-  gap: 50px;
+  gap: 40px;
 }
 
 .cake {
-  flex: 1 1 calc(33% - 20px);
+  width: 33%;
   margin: 10px;
   text-align: center;
   background-color: var(--background-color);
   position: relative;
-
+  max-height: 650px;
   img {
     width: 100%;
     object-fit: cover;
@@ -33,8 +33,20 @@
   font-weight: 200;
 }
 
-// .cake__description {
-//   margin-top: 10px;
-//   font-size: 1rem;
-//   color: #666;
-// }
+@media only screen and (max-width: 920px) {
+  .section--cakes {
+    padding: 150px 100px;
+  }
+  .cakes {
+    flex-wrap: wrap;
+  }
+  .cake {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .cake {
+    max-height: none;
+  }
+}
